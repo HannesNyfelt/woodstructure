@@ -6,18 +6,24 @@
     padding: 0;
 }
 
-html {
-    height: 100vh;
-}
-
-#id {
-    height: 100%;
+#main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
-#logo {
-    position: relative;
+.mainImage {
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    margin: 40px;
+}
+
+#header {
+    color: white;
+    position: absolute;
 }
