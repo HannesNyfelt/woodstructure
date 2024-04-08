@@ -7,6 +7,15 @@
     padding: 0;
 }
 
+#TopDiv {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+}
+
 #main {
     display: flex;
     align-items: center;

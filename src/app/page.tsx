@@ -1,8 +1,9 @@
+import TopDiv from "@/komponenter/TopDiv";
 
 
 export default function Home() {
   return (
-    <div>
+    <div><TopDiv></TopDiv>
       <div id="main">
         <h1 id="header">Wood Structure</h1>
       </div>
