@@ -13,15 +13,38 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    background-image: url("/images/header_1.jpg");
+    background-size: cover;
+}
+
+#main2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("/images/header_2.jpg");
+    background-size: cover;
 }
 
 .mainImage {
     height: 100vh;
-    width: 100%;
+}
+
+#div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .text {
     margin: 40px;
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1.5rem;
+    max-width: 30%;
 }
 
 #header {

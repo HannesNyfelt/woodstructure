@@ -1,8 +1,7 @@
 export default function Home() {
     return (
         <div>
-            <div id="main">
-                <img className="mainImage" src="/images/header_1.jpg"></img>
+            <div id="main2">
                 <h1 id="header">Wood Structure</h1>
             </div>
             <h2 className="text">(Lägg produkter här)</h2>
