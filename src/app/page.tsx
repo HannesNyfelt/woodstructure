@@ -1,4 +1,4 @@
-import TopDiv from "@/komponenter/TopDiv";
+import TopDiv from "@/components/TopDiv";
 
 
 export default function Home() {

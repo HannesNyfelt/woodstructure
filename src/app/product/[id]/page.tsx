@@ -6,20 +6,22 @@ import products from "@/products.json"
 import Image from 'next/image'
 import { useState } from 'react'
 import classNames from 'classnames'
+import TopDiv from '@/components/TopDiv'
 
 
 
-export default function Example({params}: {params: {id: string}}) {
-    const product = products.sv.find((product) => product.id === Number(params.id))
-    const [selectedSize, setSelectedSize] = useState(product?.size[0])
-    console.log(selectedSize)
+export default function Example({ params }: { params: { id: string } }) {
+  const product = products.sv.find((product) => product.id === Number(params.id))
+  const [selectedSize, setSelectedSize] = useState(product?.size[0])
+  console.log(selectedSize)
   return (
     <div className="bg-white">
+      <TopDiv></TopDiv>
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         {/* Product details */}
         <div className="lg:max-w-lg lg:self-end">
           <nav aria-label="Breadcrumb">
-            
+
           </nav>
           <div className="mt-4">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{product?.title}</h1>
@@ -31,25 +33,25 @@ export default function Example({params}: {params: {id: string}}) {
             </h2>
 
             <div className="flex flex-col items-left">
-            {product?.price.map((price) => (
-              <div key={price.name} className="flex gap-3">
-                <p className="mt-1 text-gray-900 text-xl ">{price.name} : </p>
-                <p className="mt-1 text-gray-900 text-xl"> {price.price}</p>
-              </div>  
-            ))}
-              
+              {product?.price.map((price) => (
+                <div key={price.name} className="flex gap-3">
+                  <p className="mt-1 text-gray-900 text-xl ">{price.name} : </p>
+                  <p className="mt-1 text-gray-900 text-xl"> {price.price}</p>
+                </div>
+              ))}
+
 
               <div className="ml-4 border-l border-gray-300 pl-4">
-                
+
                 <div className="flex items-center">
                   <div>
                     <div className="flex items-center">
-                      
+
                     </div>
-                    
+
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
             <div className="mt-4 space-y-6">
               <p className="text-base text-gray-500">{product?.info}</p>
@@ -84,38 +86,38 @@ export default function Example({params}: {params: {id: string}}) {
                   <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
                     {product?.size.map((s) => (
                       <RadioGroup.Option
-                      as="div"
-                      value={s.dim}
-                      className={({ active, checked }) =>
-                        classNames(
-                          'relative block cursor-pointer rounded-lg border p-4 focus:outline-none',
-                          {
-                            'ring-2 ring-indigo-500': active,
-                            'border-gray-300': !active,
-                            'border-indigo-500': checked,
-                          }
-                        )
-                      }
-                    >
-                       {({ active, checked }) => (
-                         <>
-                           <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                             {s.name}
-                           </RadioGroup.Label>
-                           <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
-                             {s.dim}
-                           </RadioGroup.Description>
-                           <div
-                             className={classNames(
-                               active ? 'border' : 'border-2',
-                               checked ? 'border-indigo-500' : 'border-transparent',
-                               'pointer-events-none absolute -inset-px rounded-lg'
-                             )}
-                             aria-hidden="true"
-                           />
-                         </>
-                       )}
-                     </RadioGroup.Option>
+                        as="div"
+                        value={s.dim}
+                        className={({ active, checked }) =>
+                          classNames(
+                            'relative block cursor-pointer rounded-lg border p-4 focus:outline-none',
+                            {
+                              'ring-2 ring-indigo-500': active,
+                              'border-gray-300': !active,
+                              'border-indigo-500': checked,
+                            }
+                          )
+                        }
+                      >
+                        {({ active, checked }) => (
+                          <>
+                            <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
+                              {s.name}
+                            </RadioGroup.Label>
+                            <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
+                              {s.dim}
+                            </RadioGroup.Description>
+                            <div
+                              className={classNames(
+                                active ? 'border' : 'border-2',
+                                checked ? 'border-indigo-500' : 'border-transparent',
+                                'pointer-events-none absolute -inset-px rounded-lg'
+                              )}
+                              aria-hidden="true"
+                            />
+                          </>
+                        )}
+                      </RadioGroup.Option>
                     ))}
                   </div>
                 </RadioGroup>
