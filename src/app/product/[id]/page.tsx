@@ -35,7 +35,7 @@ export default function Example({params}: {params: {id: string}}) {
               <div key={price.name} className="flex gap-3">
                 <p className="mt-1 text-gray-900 text-xl ">{price.name} : </p>
                 <p className="mt-1 text-gray-900 text-xl"> {price.price}</p>
-              </div>
+              </div>  
             ))}
               
 
