@@ -5,15 +5,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #TopDiv {
     width: 100%;
-    background-color: white;
+    background-color: #deb887;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
+    position: fixed;
 }
 
 #main {
@@ -45,19 +46,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 20px;
 }
 
 .text {
-    margin: 40px;
-    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+    background-color: #cdaa7d;
+    margin: 40px 20px;
+    box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.2);
     border-radius: 20px;
-    border: 1px solid black;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    border-left: 3px solid rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    max-width: 30%;
+    max-width: 800px;
+    width: 100%;
 }
 
 #header {
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    position: absolute;
+    margin-bottom: 100px;
 }

@@ -3,7 +3,8 @@ import TopDiv from "@/components/TopDiv";
 
 export default function Home() {
   return (
-    <div><TopDiv></TopDiv>
+    <div>
+      <TopDiv></TopDiv>
       <div id="main">
         <h1 id="header">Wood Structure</h1>
       </div>
@@ -17,11 +18,14 @@ export default function Home() {
           Matbord i massiv ek med utdragbara stöd för förlängningsskiva.
           Längd: 2000(+400)mm, Bredd: 1000mm, Höjd:750mm. Ytbehandling: Osmo color Top oil
         </h3>
-        <h3 className="text">
-          Tidningsställ/pall i valnöt och metall.
-          Mått: 420mm x 420mm x420mm
-          Ytbehandling: Osmo color oljevax
-        </h3>
+        <div className="text">
+          <h3>
+            Tidningsställ/pall i valnöt och metall.
+            Mått: 420mm x 420mm x420mm
+            Ytbehandling: Osmo color oljevax
+          </h3>
+
+        </div>
         <div className="text">
           <h2>Så här beställer du:</h2>
           <ul>Beställningen görs via e-post eller telefon.
