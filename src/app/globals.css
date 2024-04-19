@@ -9,11 +9,10 @@
 }
 
 #TopDiv {
+    float: top;
     width: 100%;
     background-color: #deb887;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    font-family: "Josefin Sans", sans-serif;
     position: fixed;
 }
 
@@ -25,6 +24,14 @@
     height: 100vh;
     background-image: url("/images/header_1.jpg");
     background-size: cover;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
 }
 
 #main2 {
