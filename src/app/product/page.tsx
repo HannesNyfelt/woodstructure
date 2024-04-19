@@ -5,7 +5,7 @@ export default function Product() {
   return (
     <div className="w-full gap-5 min-h-screen mt-10 ">
       <TopDiv></TopDiv>
-      <div className="relative -mb-6 w-full overflow-x-auto pb-6">
+      <div id='about' className="relative -mb-6 w-full overflow-x-auto pb-6">
         <ul
           role="list"
           className="mx-4 flex flex-wrap flex-auto gap-10"
