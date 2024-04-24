@@ -3,7 +3,7 @@ import ProductCard from '@/components/ProductCard'
 import TopDiv from '@/components/TopDiv';
 export default function Product() {
   return (
-    <div className="w-full gap-5 min-h-screen mt-10 ">
+    <div className="w-full gap-5 min-h-screen ">
       <TopDiv></TopDiv>
       <div id='about' className="relative -mb-6 w-full overflow-x-auto pb-6">
         <ul
