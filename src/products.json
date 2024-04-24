@@ -3,35 +3,86 @@
         {
             "id": 1,
             "title": "Låda",
-            "size": [{"name": "Stor", "dim": "31,5 x 31,5 x 4,5 cm"}, {"name": "Liten", "dim":  "22 x 22 x 4,5 cm"}],
-            "price": [{"name": "Stor", "price": "62 €"}, {"name": "Liten", "price":  "49 €"}] ,
+            "size": [
+                {
+                    "name": "Stor",
+                    "dim": "31,5 x 31,5 x 4,5 cm"
+                },
+                {
+                    "name": "Liten",
+                    "dim": "22 x 22 x 4,5 cm"
+                }
+            ],
+            "price": [
+                {
+                    "name": "Stor",
+                    "price": "62 €"
+                },
+                {
+                    "name": "Liten",
+                    "price": "49 €"
+                }
+            ],
             "material": "Ask",
-            "image": "https://woodstructure.fi/produktbilder/rasiat_1.jpg" ,
+            "image": "https://woodstructure.fi/produktbilder/rasiat_1.jpg",
             "info": "En Liten och smidig låda för en lyxigare vardag"
         },
         {
             "id": 2,
             "title": "Servettställning",
-            "size":[{"name": "Stor", "dim": "19 x 19 x 7,5 cm"}, {"name": "Liten", "dim": "14,5 x 14,5 x 7,5 cm"}],
-            "price":  [{"name": "Stor", "price": "36 €"}, {"name": "Liten", "price":  "29 €"}],
+            "size": [
+                {
+                    "name": "Stor",
+                    "dim": "19 x 19 x 7,5 cm"
+                },
+                {
+                    "name": "Liten",
+                    "dim": "14,5 x 14,5 x 7,5 cm"
+                }
+            ],
+            "price": [
+                {
+                    "name": "Stor",
+                    "price": "36 €"
+                },
+                {
+                    "name": "Liten",
+                    "price": "29 €"
+                }
+            ],
             "material": "Ask",
-            "image" : "https://woodstructure.fi/produktbilder/servettiteline_1.jpg",
-            "info" : "Passar till 33 x 33 och 24 x 24 cm storleks servetter"
+            "image": "https://woodstructure.fi/produktbilder/servettiteline_1.jpg",
+            "info": "Passar till 33 x 33 och 24 x 24 cm storleks servetter"
         },
-        {  
+        {
             "id": 3,
             "title": "Lykta",
-            "size": [{"name": "Stor", "dim": "Ø 30 cm, höjd 20 cm (24,5 cm)"}, {"name": "Liten", "dim": "Ø 20 cm, höjd 15 cm"}],
-            "price": [{"name": "Stor", "price": "89€"}, {"name": "Liten", "price":  "79 €"}],
+            "size": [
+                {
+                    "name": "Stor",
+                    "dim": "Ø 30 cm, höjd 20 cm (24,5 cm)"
+                },
+                {
+                    "name": "Liten",
+                    "dim": "Ø 20 cm, höjd 15 cm"
+                }
+            ],
+            "price": [
+                {
+                    "name": "Stor",
+                    "price": "89€"
+                },
+                {
+                    "name": "Liten",
+                    "price": "79 €"
+                }
+            ],
             "material": "Björk",
-            "color" : [{"name": "svart", "colorBg": "#000"}, {"name":"björk", "colorBg": "yellow"}, {"name": "svart/vit", "colorBg": "linear-gradient(90deg, #000 50%, #fff 50%)"}],
             "image": "https://woodstructure.fi/produktbilder/lyhdyt_pienet.jpg",
             "info": "För inomhusbruk, använd endast värmeljus"
-        } 
+        }
     ],
     "fi": [
-        {
-
-        }
+        {}
     ]
 }
